@@ -1,0 +1,11 @@
+dotnet --version
+	8.0.400
+dotnet new globaljson --sdk-version 8.0.400 --force
+dotnet new sln --name CleanArchitectureDDD
+dotnet new classlib -o src/CleanArchitecture/CleanArchitecture.Domain
+dotnet sln add src/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj
+
+
+cd .\src\CleanArchitecture\CleanArchitecture.Domain\
+
+dotnet add package MediatR.Contracts

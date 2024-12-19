@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BiOJ/Zf0+kM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\k.sanchez4\\Desktop\\CleanArchitectureDDD\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\k.sanchez4\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
