@@ -35,14 +35,14 @@ internal sealed class ReserveRentalCommandHandler : ICommandHandler<ReserveRenta
     }
     public async Task<Result<Guid>> Handle(ReserveRentalCommand request, CancellationToken cancellationToken)
     {
-        var user = await userRepository.GetByIdAsync(request.userId, cancellationToken);
+        var user = await userRepository.GetByIdAsync(request.UserId, cancellationToken);
 
         if (user is null)
         {
             return Result.Failure<Guid>(UserErrors.NotFound);
         }
 
-        var vehicle = await vehicleRepository.GetByIdAsync(request.vehicleId, cancellationToken);
+        var vehicle = await vehicleRepository.GetByIdAsync(request.VehicleId, cancellationToken);
 
         if (vehicle is null)
         {
